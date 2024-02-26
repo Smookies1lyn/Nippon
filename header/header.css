@@ -1,0 +1,52 @@
+/*--------------------------------------------------
+                    General 
+ --------------------------------------------------*/
+ body{
+    background-color: #FAFFE7;
+    font-family:"Montserrat", sans-serif;
+    font-weight:400;
+    font-style: normal;
+}
+/*--------------------------------------------------
+                    navigation 
+ --------------------------------------------------*/
+ nav{
+    margin: 0;
+    padding: 10px;
+    background-color: #98AF77;
+
+ }
+ .nav-link{
+    color: white;
+    align-items: center;
+    font-family: "MuseoModerno", sans-serif;
+    position: relative; /* Ensures that the pseudo-element is positioned relative to its link */
+    display: inline-block; /* Ensures the link encompasses the space for proper hover effect */
+ }
+ .nav-link:hover {
+    color: white;
+ }
+ .nav-link:hover::after {
+    content: ""; /* Required for the pseudo-element to display */
+    position: absolute;
+    left: 50%;
+    top: 100%; /* Keeps the image right below the link text */
+    transform: translateX(-50%) rotate(52deg); /* Centers the image horizontally */
+    width: 48px; /* Adjust based on your chopsticks image size */
+    height: 48px; /* Adjust based on your chopsticks image size */
+    background-image: url('/Nippon/img/cs.png'); /* Path to your chopsticks image */
+    background-size: contain; /* Ensures the image fits within the dimensions specified */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+
+}
+
+ /*--------------------------------------------------
+                    Billeder 
+ --------------------------------------------------*/ 
+img{
+    width: 75px;
+    height: 100px;
+}
+.logo{
+width: 100%;
+}
