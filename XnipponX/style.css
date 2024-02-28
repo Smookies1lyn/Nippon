@@ -1,0 +1,283 @@
+/* ---- Basic CSS reset ------ */
+*,
+:after,
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+  font-size: 100%;
+}
+
+/* -------Theme style ----------*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    color: #000000;
+    background-color: #FAFFE7;
+    margin-top: 40px;
+  }
+
+h1{
+    font-style: italic;
+    align-self: flex-start;
+    margin-left: 50px;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+/*--------------------------------------------------
+                    navigation 
+ --------------------------------------------------*/
+ nav{
+    margin: 0;
+    padding: 10px;
+    background-color: #98AF77;
+    width: 100%;
+
+ }
+ .nav-link{
+    color: white;
+    align-items: center;
+    font-family: "MuseoModerno", sans-serif;
+    position: relative; /* Ensures that the pseudo-element is positioned relative to its link */
+    display: inline-block; /* Ensures the link encompasses the space for proper hover effect */
+ }
+ .nav-link:hover {
+    color: white;
+ }
+ .nav-link:hover::after {
+    content: ""; /* Required for the pseudo-element to display */
+    position: absolute;
+    left: 50%;
+    top: 100%; /* Keeps the image right below the link text */
+    transform: translateX(-50%); /* Centers the image horizontally */
+    width: 90px; /* Adjust based on your chopsticks image size */
+    height: 48px; /* Adjust based on your chopsticks image size */
+    background-image: url('/Nippon/img/cs.png'); /* Path to your chopsticks image */
+    background-size: contain; /* Ensures the image fits within the dimensions specified */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+
+}
+
+ /*--------------------------------------------------
+                    Billeder 
+ --------------------------------------------------*/ 
+.logo1{
+    width: 75px;
+    height: 100px;
+}
+.logo{
+    width: 100%;
+    position: relative;
+    height: 84px;
+    bottom: 24px;
+    z-index: -1;
+}
+
+.BaggrundImage{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* --------- Step by step ---------- */
+
+.stepKnap{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFFE7;
+    border: 2px solid #98AF77;
+    border-radius: 10px;
+    width: 60%;
+    height: 60px;
+    margin-top: 40px;
+}
+
+#step_kontakt_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.step_kontakt{
+    background-color: #E7F1BF;
+    border: 10px solid #98AF77;
+    border-radius: 20px;
+    color: #98AF77;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    line-height: 350%;
+    width: 350px;
+    margin-top: 40px;
+}
+
+.kontakt_ikon_step{
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* --------- Steps 1 - 2 - 3 - 4 ----------*/
+
+.step_ikoner{
+    width: 50%;
+}
+
+.step_v{
+    align-self: flex-start;
+    width: 50%;
+    height: 500px;
+}
+
+.step_h{
+    align-self: flex-end;
+    width: 50%;
+    height: 500px;
+}
+
+.step_text_h1{
+    position: absolute;
+    text-align: center;
+    right: 13%;
+    top: 1700px;
+}
+
+.step_text_v2{
+    position: absolute;
+    text-align: center;
+    left: 13%;
+    top: 2200px;
+}
+
+.step_text_h3{
+    position: absolute;
+    text-align: center;
+    right: 13%;
+    top: 2700px;
+}
+
+.step_text_v4{
+    position: absolute;
+    text-align: center;
+    left: 13%;
+    top: 3200px;
+}
+
+/* ---- De farvede bokse ---- */
+
+.step_nederst{
+    display: flex;
+    background-color: #DEE8C7;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.step_midterst{
+    display: flex;
+    background-color: #98AF77;
+    width: 95%;
+    height: 90%;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.step_overst{
+    display: flex;
+    background-color: #E7F1BF;
+    width: 95%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.step_nederst_h{
+    display: flex;
+    background-color: #DEE8C7;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.step_midterst_h{
+    display: flex;
+    background-color: #98AF77;
+    width: 95%;
+    height: 90%;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.step_overst_h{
+    display: flex;
+    background-color: #E7F1BF;
+    width: 95%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+
+/* ------- Footer ------ */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #98AF77;
+    color: #ffffff;
+    padding: 15px; 
+    gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+#logo_footer{
+    width: 60px;
+  }
+
+.footer_address{
+    margin-top: 5px;
+  }
+
+.footer_some{
+    display: flex;
+    justify-content: space-around;
+  }
+
+.some_image{
+    width: 35px;
+
+  }
