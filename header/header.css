@@ -1,10 +1,18 @@
+*,
+:after,
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 /*--------------------------------------------------
                     General 
  --------------------------------------------------*/
- body{
+body{
     background-color: #FAFFE7;
     font-family:"Montserrat", sans-serif;
-    font-weight:400;
+    font-weight: 500;
     font-style: normal;
 }
 /*--------------------------------------------------
@@ -31,22 +39,54 @@
     position: absolute;
     left: 50%;
     top: 100%; /* Keeps the image right below the link text */
-    transform: translateX(-50%) rotate(52deg); /* Centers the image horizontally */
-    width: 48px; /* Adjust based on your chopsticks image size */
+    transform: translateX(-50%); /* Centers the image horizontally */
+    width: 90px; /* Adjust based on your chopsticks image size */
     height: 48px; /* Adjust based on your chopsticks image size */
     background-image: url('/Nippon/img/cs.png'); /* Path to your chopsticks image */
     background-size: contain; /* Ensures the image fits within the dimensions specified */
     background-repeat: no-repeat; /* Prevents the image from repeating */
 
 }
+/*--------------------------------------------------
+                    banner knap
+ --------------------------------------------------*/
+ .container .picKnap{
+    position: absolute;
+    bottom: 80px;
+    right: 1px;
+    background-color: #98AF77;
+    opacity: 85%;
+    color: white;
+    border-radius: 30px 0px 0px 30px;
+    height: 116px;
+    width: 480px;
+
 
  /*--------------------------------------------------
                     Billeder 
  --------------------------------------------------*/ 
-img{
+.logo1{
     width: 75px;
     height: 100px;
 }
 .logo{
-width: 100%;
+    width: 100%;
+    position: relative;
+    height: 84px;
+    bottom: 24px;
+    z-index: -1;
+}
+.banner{
+    width: 100%;
+    height: 584px;
+    position: relative;
+    bottom: 72px;
+    z-index: -2;
+}
+
+.BaggrundImage{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
 }
