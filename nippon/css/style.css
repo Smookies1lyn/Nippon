@@ -1,0 +1,298 @@
+/*reset*/
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+/*Theme style*/
+body{
+    font-family: 'Montserrat';
+    color: black;
+    background: #faffe7;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.om1_container{
+    display: flex;
+    justify-content: right;
+
+}
+
+.om2_container{
+    display: flex;
+    justify-content: left;
+    margin-top: 300px;
+}
+
+.om3_container{
+    display: flex;
+    justify-content: right;
+    margin-top: 300px;
+
+}
+
+.om4_container {
+    display: flex;
+    justify-content: left;
+    margin-top: 300px;
+}
+
+.om5_container{
+    display: flex;
+    justify-content: right;
+    margin-top: 300px;
+
+}
+
+.om6_container {
+    display: flex;
+    justify-content: left;
+    margin-top: 300px;
+}
+
+
+
+/*første boks - historien om */
+
+
+
+/*tekster*/
+.om_text_h1{
+    position: absolute;
+    text-align: start;
+    right: 20%;
+    top: 100px;
+    margin-left: 80px;
+}
+
+.historien_titel{
+    font-size: 64px;
+    font-weight:bold;
+}
+
+.historien_tekst{
+    position: absolute;
+    text-align: start;
+    right: 55%;
+    top: 320px;
+    margin-left: 110px;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+/*værdier tekst*/
+.value_nippon{
+    position: absolute;
+    text-align: start;
+    left: 35%;
+    top: 100%;
+    margin-left: 80px;
+}
+
+.value_tekst{
+    position: absolute;
+    text-align: start;
+    top: 500px;
+    margin-left: 180px;
+    margin-right: 80px;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+.value_titel{
+    margin-top: 300px;
+    font-size: 64px;
+    font-weight:bold;
+}
+
+/*madspild tekst*/
+.madspild_text_h1{
+    position: absolute;
+    text-align: start;
+    right: 20%;
+    margin-left: 80px;
+}
+
+.madspild_titel{
+    font-size: 64px;
+    font-weight:bold;
+    margin-top: 350px;
+    margin-right: 20%;
+}
+
+.madspild_tekst{
+    position: absolute;
+    text-align: start;
+    right: 55%;
+    margin-top: 550px;
+    margin-left: 110px;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+/*frugt og grønt*/
+.frugt_nippon{
+    position: absolute;
+    text-align: start;
+    left: 45%;
+    margin-top: 50px;
+
+}
+
+.frugt_tekst{
+    position: absolute;
+    right: -40px;
+    text-align: start;
+    margin-left: 100px;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+.frugt_titel{
+    margin-top: 300px;
+    font-size: 64px;
+    font-weight:bold;
+}
+
+/*familie hygge m. baby*/
+.fambaby_text_h1{
+    position: absolute;
+    text-align: start;
+    margin-left: 80px;
+}
+
+
+
+.fambaby_titel{
+    font-size: 64px;
+    font-weight:bold;
+    margin-top: 350px;
+    
+}
+
+.fambaby_tekst{
+    position: absolute;
+    text-align: start;
+    right: 55%;
+    margin-top: 480px;
+    margin-left: 110px;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+/*miljøøøø*/
+.klima_nippon{
+    position: absolute;
+    text-align: start;
+    left: 45%;
+    margin-top: 50px;
+
+}
+
+.klima_tekst{
+    position: absolute;
+    text-align: start;
+    margin-left: 100px;
+    line-height: 40px;
+    font-size: 24px;
+    right: -150px;
+}
+
+.klima_titel{
+    margin-top: 300px;
+    font-size: 64px;
+    font-weight:bold;
+}
+
+/*billeder*/
+
+
+/*boks*/
+.om_h{
+    align-self: flex-end;
+    width: 50%;
+    height: 800px;
+
+}
+
+.om_v{
+    align-self: flex-start;
+    width: 50%;
+    height: 800px;
+}
+
+
+/*boks rammer*/
+.om_nederst{
+    display: flex;
+    background-color: #DEE8C7;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.om_midterst{
+    display: flex;
+    background-color: #98AF77;
+    width: 95%;
+    height: 90%;
+    align-items: center;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.om_overst{
+    display: flex;
+    background-color: #E7F1BF;
+    width: 95%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.om_nederst_h{
+    display: flex;
+    background-color: #DEE8C7;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.om_midterst_h{
+    display: flex;
+    background-color: #98AF77;
+    width: 95%;
+    height: 90%;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.om_overst_h{
+    display: flex;
+    background-color: #E7F1BF;
+    width: 95%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
