@@ -1,0 +1,32 @@
+/* ------- Footer ------ */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #98AF77;
+    color: #ffffff;
+    padding: 15px; 
+    gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+#logo_footer{
+    width: 60px;
+  }
+
+.footer_address{
+    margin-top: 5px;
+  }
+
+.footer_some{
+    display: flex;
+    justify-content: space-around;
+  }
+
+.some_image{
+    width: 35px;
+
+  }
